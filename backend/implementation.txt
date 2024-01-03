@@ -1,0 +1,8 @@
+register-> please verify the email sent over the mail -> login -> dashboard
+
+register isVerified ->false
+emailToken will sent over the mail after clicking makes it's makes isVerified = true and redirect to login page
+
+
+http://localhost:8080/user/verify-email?
+token=ed228a3ac4a03bf54530ef9c4ecaca3459be75a96969511df3a0c54a7b066f21b3d884f0efc471c3887f74a418fa38b88234708beb468d39b51046c270acaf36%7D

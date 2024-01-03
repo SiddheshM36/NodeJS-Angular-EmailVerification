@@ -1,0 +1,35 @@
+<div class="container">
+<form [formGroup]="registerForm" (ngSubmit)="onRegisterSubmit()">
+    Name: <input  class="form-control" type="text" formControlName="name"><br>
+    Email: <input  class="form-control" type="text" formControlName="email"><br>
+    Password: <input  class="form-control" type="text" formControlName="password"><br>
+    <br>
+    
+    <button type="submit" class="btn btn-primary" [disabled]="!registerForm.valid" 
+    data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+    >Register</button>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  ">
+      <div class="modal-content">
+        <div class="modal-header">  
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Registration Sucess !!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Please check your email for confirmation link.
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</form>
+</div>
